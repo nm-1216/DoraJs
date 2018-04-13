@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript" src="dist/Dora.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+//import { trim } from 'vux'
+console.log( Dora.base64.encode('123456'))
+console.log( Dora.base64.decode('MTIzNDU2'))
+//Dora.cookie.set('Dora','MTIzNDU2')
+//document.cookie = 'Dora=1'
+var ii=Dora.cookie.get('Dora');
+//console.log('cookie.set', ))
+console.log('cookie.get',ii )
+
+console.log('date.format',Dora.date.format(new Date(),'YYYY-MM-DD HH:mm:ss') )
+console.log('date.format',Dora.date.range(new Date('2018-03-11'),new Date(),'YYYY-MM-DD') )
+
+
+// console.log(trim(' ddddd '))
+</script>
+</body>
+</html>
