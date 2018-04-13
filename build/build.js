@@ -2,7 +2,6 @@
 
 process.env.NODE_ENV = 'production'
 const webpack = require('webpack')
-const config = require('../config')
 const webpackConfig = require('./webpack.prod.conf')
 
 webpack(webpackConfig, function (err, stats) {
